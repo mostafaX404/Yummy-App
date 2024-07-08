@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="vh-100" id="all">
+
+
+  <!-- main loading screen -->
+  <div id="loading">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+
+
+  <!-- sideBar -->
+  <section id="sidebar">
+    <div id="inner" class="inner-sidebar d-flex flex-column justify-content-between p-4 ">
+
+      <div id="inner-items">
+        <h5 class="my-3 text-white" id="searchLink">Search</h5>
+        <h5 class="my-3 text-white" id="categoriesLink">Categories</h5>
+        <h5 class="my-3 text-white" id="areaLink">Area</h5>
+        <h5 class="my-3 text-white" id="ingredientLink">Ingredients</h5>
+        <h5 class="my-3 text-white" id="contactsLink"> Contact Us</h5>
+      </div>
+
+
+      <div>
+        <div>
+          <i class="fa-brands fa-facebook text-white"></i>
+          <i class="fa-brands fa-twitter text-white"></i>
+          <i class="fa-solid fa-globe text-white"></i>
+        </div>
+        <span class="text-white">Copyright 2023 All Rights <br>
+          Reserved (mostafa elgamal).</span>
+      </div>
+
+    </div>
+    <div id="outter"
+      class="outter-sidebar  d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+      <img src="./images/logo.png " alt="" class="" id="logo" />
+      <div class="d-flex flex-column">
+        <i class="fa-solid fa-bars fs-3" id="open"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+      </div>
+      <div class="d-flex flex-column ">
+        <i class="fa-solid fa-globe "></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="loading-inner" class="d-none vh-100">
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="RightHalfSection" id="theRightHalf">
+
+
+    <!-- inner loading -->
+
+
+    <!-- first time meals screen -->
+
+    <div class="firstTimeSection container " id="firstTime">
+
+      <div class="row py-5" id="first-inner">
+
+
+      </div>
+    </div>
+
+
+
+    <!-- The Search Section  -->
+
+    <div class="container mt-4 w-75 d-none" id="search">
+      <div class="row py-3">
+        <div class="col-6">
+          <input type="text" name="" id="searchByName" class="form-control w-100 bg-transparent"
+            placeholder="Search By Name">
+        </div>
+        <div class="col-6">
+          <input type="text" name="" id="searchByFirstLetter" class="form-control w-100 bg-transparent" maxlength="1"
+            placeholder="Search By First Letter">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row py-5" id="search-inner">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- The Category Section -->
+
+    <section id="category" class="container py-5 d-none">
+      <div class="row " id="category-inner">
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- The contacts us Section -->
+    <section id="area" class="container py-5 d-none">
+      <div id="area-inner" class="row g-4">
+
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+    <!-- The Ingredients us Section -->
+
+    <section id="ingredient" class="container py-5 d-none">
+      <div>
+        <div class="row" id="ingredient-inner"></div>
+      </div>
+
+
+    </section>
+
+
+    <!-- The contacts us Section -->
+    <div class=" container vh-100 d-flex align-items-center w-75 d-none " id="contacts">
+      <div class="container text-center ">
+        <div class=" row g-4">
+
+          <div class="col-md-6 ">
+            <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter Your Name"
+              id="nameInput">
+
+            <div id="nameWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Name length at least 3 , Special characters and numbers not allowed
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter Your Email "
+              id="emailInput">
+
+            <div id="emailWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Email not valid *mostafa@aaa.bbb
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter Your Phone"
+              id="phoneInput">
+
+            <div id="phoneWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Enter a valid Egyption number
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="number" class="form-control" aria-label="Sizing example input" placeholder="Enter Your Age"
+              id="ageInput" min="1" max="99">
+
+            <div id="ageWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Enter a valid age between 12 and 99
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter Your Password"
+              id="passInput">
+
+            <div id="passWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Minimum eight characters, at least one letter and one number
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Repassword"
+              id="passCofirmInput">
+
+            <div id="confirmWrong" class="alert alert-danger w-100 mt-2 d-none">
+              Password and password confirm are not matched
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <button type="button" disabled="true" class="btn btn-danger mt-3 btn-outline-danger" id="submit">Submit</button>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
